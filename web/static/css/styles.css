@@ -1,0 +1,86 @@
+@media screen and (min-width: 20em){
+div {  
+      font-size: calc( 16px + (18 - 12) * (75vw - 300px) / (600 - 300) );
+}
+
+*, *::before, *::after {box-sizing: border-box; }
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-weight: 400%;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 0.5px 0.5px #1b2b3f;
+    margin: 1.5% auto;
+    width: 95%;
+    z-index: 999;
+    max-width: 0em;
+    background: linear-gradient(95deg, palegoldenrod, rgb(250, 250, 242));
+}
+form {
+    background: linear-gradient(15deg, #fcf8c4c2, #6fa059);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(27,43,63,0.64);
+    box-shadow: 2px 2px 3px 0px rgba(27,43,63,0.64);
+    padding: 1.5em;
+    padding-bottom: 2em;
+    border-radius: 0.3em;
+    text-align: left;
+    width: 100%;
+    height: 100%; 
+    margin: auto;
+    position: relative;
+    box-sizing: content-box;
+}
+input {
+    width: 70%;
+    height: 3em;
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    background-color: rgb(250, 250, 220);
+}
+input[type]:focus, textarea:focus {
+    /* -moz-transition-property: -moz-box-shadow, border;
+    -o-transition-property: -o-box-shadow, border;
+    -webkit-transition-property: -webkit-box-shadow, border;
+    transition-property: box-shadow, border; */
+
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+.submit {
+    width: 9em;
+    background-color:rgb(155, 206, 131);
+    border-radius: 0.5em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50%;
+    font-weight: 400%;
+    letter-spacing: 0.2em;
+    text-shadow: 1px 0.5px 0.1px #1b2b3f;
+}
+h1 {
+    margin: 0;
+    padding: 0.3em;
+}
+label {
+    padding-bottom: 0.3em;
+}
+fieldset {
+    border: 1px solid rgba(27,43,63,0.64);
+    border-radius: 0.2em;
+}
+
+.error {
+    color: rgb(225, 0, 0);
+
+}
+input:required:invalid, input:focus:invalid {
+    color: rgb(225, 0, 0);
+    /* -moz-box-shadow: none; */
+}
+input:required:valid {
+  color: rgb(41, 63, 8);
+  font: bold;
+  font-size: 50%;
+}
+}
